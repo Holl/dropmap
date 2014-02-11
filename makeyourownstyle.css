@@ -1,0 +1,59 @@
+
+
+#map-canvas {
+	width: 400px;
+	height: 300px;
+  position: fixed;
+  margin-top: auto;
+  margin-bottom: auto;
+}​
+
+#info {
+  float: right;
+  position: absolute;
+  width: 100px;
+  height: 800px;
+  background-color: blue;
+}
+
+.well {
+}
+
+#endButtons {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+
+}
+
+#timeLabel {
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  text-align: center;
+  
+}
+
+select {
+  position: relative;
+}
+
+#addPoint{
+  position: relative;
+  bottom: 2px;
+}
+
+#choices {
+  margin-left: auto;
+  margin-right: auto;
+  width: 403px;
+  margin-top: 20px;
+}
+
+.gone {
+  font-style: bold;
+  color: red;
+}

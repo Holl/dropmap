@@ -1,0 +1,91 @@
+<html>
+
+	<head>
+		<script src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyADPTRE7khpljnb26lIeUR6jd6fvQTIwRc&sensor=false&libraries=geometry"></script>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="makeyourown.js"></script>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" href="makeyourownstyle.css">
+			<script type="text/javascript" src="bootstrap.js"></script>
+
+		<title>Make your own map!</title>
+	</head>
+
+
+	<body>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Mapper</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li href="tickText.html"><a href="tickTest.html">New Quiz</a></li>
+        <li lass="active" href="makeown.html"><a href="makeown.html">Make your Own Quiz</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div id="map-canvas"></div>
+			</div>
+			<div class= "col-md-2">
+			</div>
+			<div class="col-md-7">
+				<div class="well">
+				<h1>Your Game</h1>
+				<p>In the left text box, add the hints the player will get.  In the right text box, put the places they have to guess.  It will appear in the map on the left- make sure it's correct!</p>
+				<p>It will load into Local Storage, so you can come back to it any time.  But be careful- you can only store one game at a time!</p>
+				<div id="choices">
+					<input type="text" id="zonePicker" placeholder="The Place (ex. France)"></input>
+				<input type="text" placeholder="The Hint (ex. Beer)" id="hintPicker"></input>
+				<button id="addPoint" class="btn btn-small">Add Point</button>
+				<div>
+				<div id="timeLabel">
+
+				<div>
+					<ol id="playerList">
+					</ol>
+
+				</div>
+
+
+		</div>
+
+
+			<div id= "endButtons">
+
+								<label for="theTime">
+					How long does the quiz last?
+				<select id="theTime">
+					<option value="30">30 Seconds</option>
+					<option value="45">45 Seconds</option>
+					<option value="60">60 Seconds</option>
+					<option value="120">2 Minutes</option>
+					<option value="300">5 Minutes</option>
+					<option value="600">10 Minutes</option>
+				</select>
+			</label>
+			<br>
+			<button class='btn' onClick="window.location.reload()">Restart</button>
+			<button class='btn' id='storeIt'>Store your game!</button>
+			<button class='btn' id="playIt" href="tickTest.html">Back to Mapper!</button>
+		</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
