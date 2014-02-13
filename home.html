@@ -1,6 +1,7 @@
 <html>
 
 	<head>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 		<script src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyADPTRE7khpljnb26lIeUR6jd6fvQTIwRc&sensor=false&libraries=geometry"></script>
 		<script type="text/javascript" src="jquery.js"></script>
 		
@@ -49,8 +50,10 @@
 		<div id="gameContain">
 
 		<div id ="playArea">
-			<div class="progress progress-success" id="barCar">
-  				<div class="bar" id= "progressBar"></div>
+			<div class="progress"  id="barCar">
+  				<div class="progress-bar progress-bar-success" role="progressbar" id="progressBar"aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+    				<span class="sr-only">60% Complete</span>
+  			</div>
 			</div>
 			<p id="hint">Pick a quiz!</p>
 

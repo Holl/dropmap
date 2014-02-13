@@ -21,7 +21,6 @@ function initizalize() {
         zoom: 2,
         mapTypeIds: [google.maps.ROADMAP, 'simple'],
         disableDefaultUI: true,
-        draggable: false,
         disableDoubleClickZoom: true,
         keyboardShortcuts: false,
         scrollwheel: false
