@@ -58,6 +58,10 @@ body {
 	margin: 15px;
 }
 
+span {
+  font-weight: bold; 
+}
+
 #hint {
   margin-top: 0px;
   margin-bottom: 20px;

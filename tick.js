@@ -197,6 +197,12 @@ function tickTock() {
         $('#missed').html("You missed: " + (arrayPASS.length-count));
         $('#score').html("Your score: "+ score.toFixed(0) +'%');
 
+        $('#hint').text('Click "New Quiz" above to play again!');  
+        $('#guesses').hide();
+        $('#progressBar').hide();
+        $('#barCar').hide();
+
+
         console.log("Things are running here.")
 
         if (count === 0)
@@ -334,6 +340,7 @@ function cycleThroughArray(array){
                 console.log("Count is: "+ count + ".  The length of the array is: " + array.length);
 
 
+
 				count++;
 
                 if (errorCount > 0 && array.length-errorCount>= orignalLength)
@@ -360,7 +367,14 @@ function cycleThroughArray(array){
                         $('#missed').html("You missed: None of them!");
                         $('#score').html("Your score: 100%");
                         $('#inReview').html("YOU ROCK!");
-                        $('#endModal').modal('show');  
+                        $('#endModal').modal('show');
+                        $('#hint').text('Click "New Quiz" above to play again!');  
+                        $('#guesses').hide();
+                        $('#progressBar').hide();
+                        $('#barCar').hide();
+
+
+
                         return;
                     };   
 
@@ -389,6 +403,7 @@ function cycleThroughArray(array){
 
                 $('#progressBar').attr("style", ratio);
 
+
             }
 			else
 			{
@@ -396,6 +411,7 @@ function cycleThroughArray(array){
                 //User is wrong, shake the input, otherwise no change.
 
 				console.log("Not correct!")
+                $('#guesses').val('');
 				$('#guesses').addClass("shakeMe")
                 setTimeout(function(){$('#guesses').removeClass("shakeMe")}, 1000);
 	       }
@@ -472,7 +488,7 @@ var Cars = [
     {Hint: "Dongfeng Motor", Zoner: "china"},
     {Hint: "Mahindra Group", Zoner: "india"},
     {Hint: "AvtoVAZ", Zoner: "russia"},
-    {Hint: "Volvo", Zoner: "sweeden"},
+    {Hint: "Volvo", Zoner: "sweden"},
 ];
 
 var States = [
@@ -504,7 +520,7 @@ var States = [
     {Hint: "Helena", Zoner: "montana"},
     {Hint: "Lincoln", Zoner: "nebraska"},
     {Hint: "Carson City", Zoner: "nevada"},
-    {Hint: "Concord", Zoner: "new hamshire"},
+    {Hint: "Concord", Zoner: "new hampshire"},
     {Hint: "Trenton", Zoner: "new jersey"},
     {Hint: "Santa Fe", Zoner: "new mexico"},
     {Hint: "Albany", Zoner: "new york"},
