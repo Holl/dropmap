@@ -42,7 +42,7 @@ $(document).ready(function () {
     });
 
     $('#playIt').click(function(){
-        window.location.href = 'tickTest.html';
+        window.location.href = 'home.html';
     })
 
 
